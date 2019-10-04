@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Pie Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-random.v2.min.js"></script>
+    <script type="text/javascript" src="cs470_budgetPieChart.js"></script>
+    <script type="text/javascript" src="http://d3js.org/colorbrewer.v1.min.js"></script>
+
+</head>
+<body>
+
+<script>
+    d3.csv('SSU_Budget_CSV.csv').then(csv => drawChart(csv));
+</script>
+<div id="chart"></div>
+</body>
+</html>
